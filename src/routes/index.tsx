@@ -4,15 +4,15 @@ import {
   Switch,
 } from 'react-router-dom'
 import { Layout } from '../components'
-import Home from '../pages/Home'
-import { linkHome } from '../utils'
+import {Navegation} from '../pages'
+import { linkAbout, linkHome, linkProjects } from '../utils'
 
 const Routes = () => {
   return (
     <Router>
       <Layout>
         <Switch>
-          <Route path={linkHome} component= {Home}/>
+          <Route path={linkHome} component= {Navegation} exact/>
         </Switch>
       </Layout>
     </Router>

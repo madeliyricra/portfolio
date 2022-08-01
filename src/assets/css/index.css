@@ -12,3 +12,10 @@
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
 }
+
+body{
+  scroll-snap-type:  y mandatory;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}

@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 
-
 const Container = styled.div`
   width: 100%;
   height: calc(100vh);
-  background: yellow;
+  background: blue;
   scroll-snap-align: start;
-  display: flex;
 `;
 
-
-const Home = () => {
+const Projects = () => {
   return (
-    <Container id="home" className='section'>home</Container>
+    <Container id='projects' className='section'>
+      Projects
+    </Container>
   )
 }
 
-export default Home
+export default Projects

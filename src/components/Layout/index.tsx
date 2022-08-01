@@ -1,17 +1,15 @@
-import React from 'react'
+import Header from './Header'
 
-interface ILayoutProps {
-  children?: JSX.Element,
+interface Ilayout {
+   children: JSX.Element,
 }
 
-const Layout = ({children}: ILayoutProps) => {
+const Layout = ({children} : Ilayout) => {
   return (
-    <div>
-      <h2>Layout</h2>
-      <div>
-       {children}
-      </div>
-    </div>
+    <>
+      <Header />
+      {children}
+    </>
   )
 }
 
