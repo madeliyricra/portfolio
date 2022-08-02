@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Indicator, Nav, NavItem } from './styled'
 
-export interface IIndicator {
-  width : number,
-  transform: number
-}
 
 const Header = () => {
   const [itemActive, setItemActive] = useState(0)
-  const [widthIndicator, setWidthIndicator] = useState(120)
 
   const observer : any = new IntersectionObserver((entradas, observer) => {
     const sections : any = document.querySelectorAll('.section');
@@ -31,10 +26,10 @@ const Header = () => {
     <Container id='header'>
       <h2 style={{color: 'white'}}>Logo</h2>
       <Nav>
-        <NavItem href={'#home'}>Home</NavItem>
+        <NavItem href={'#home'}>Inicio</NavItem>
         <NavItem href={'#about'}>Sobre mi</NavItem>
         <NavItem href={'#projects'}>Proyectos</NavItem>
-        <Indicator width={widthIndicator} transform={itemActive}/>
+        <Indicator width={120} transform={itemActive}/>
       </Nav>
     </Container>
   )

@@ -1,16 +1,17 @@
-import styled from 'styled-components';
-
-const Container = styled.div`
-  width: 100%;
-  height: calc(100vh);
-  background: blue;
-  scroll-snap-align: start;
-`;
+import { projects, Title } from '../../utils';
+import Project from './Project';
+import { Container, ListProjects } from './styled';
 
 const Projects = () => {
   return (
     <Container id='projects' className='section'>
-      Projects
+      <Title>Mis proyectos</Title>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque rem sed quaerat aut accusantium dicta odio distinctio odit quo repudiandae vero, at quibusdam ex deserunt porro excepturi quidem, sit veritatis?</p>
+      <ListProjects>
+        {
+          projects?.map((project, key)=> <Project key={key} {...project}/>)
+        }
+      </ListProjects>
     </Container>
   )
 }

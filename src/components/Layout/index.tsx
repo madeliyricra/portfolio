@@ -1,3 +1,4 @@
+import SocialNetwork from '../SocialNetwork'
 import Header from './Header'
 
 interface Ilayout {
@@ -9,6 +10,7 @@ const Layout = ({children} : Ilayout) => {
     <>
       <Header />
       {children}
+      <SocialNetwork />
     </>
   )
 }

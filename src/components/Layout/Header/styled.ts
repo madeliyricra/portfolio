@@ -1,17 +1,18 @@
 import styled from "styled-components"
-import { IIndicator } from "."
+import { IIndicator } from "./props"
 
 export const Container = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 25px;
   width: 100%;
   height: 80px;
-  background-color: #0e172c;
+  background-color: var(--blue-900);
 `
 export const Nav = styled.nav`
   display: flex;
@@ -19,8 +20,10 @@ export const Nav = styled.nav`
 `
  
 export const NavItem = styled.a`
+  display: grid;
+  place-items: center;
   width: 120px;
-  text-align: center;
+  height: 80px;
   font-size: 16px;
   color: #fff;
 `

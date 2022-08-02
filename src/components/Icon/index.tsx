@@ -1,12 +1,7 @@
 import icons from '../../assets/icons/icons.svg'
+import { IIcon } from './props'
 
-interface IconProps {
-  name: string,
-  className?: string,
-  handleClick?: (target: any) => void,
-}
-
-const Icon = (props : IconProps) => {
+const Icon = (props : IIcon) => {
   const { name, className, handleClick } = props
 
   return (

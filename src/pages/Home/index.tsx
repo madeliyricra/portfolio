@@ -1,18 +1,25 @@
-import styled from 'styled-components';
-
-
-const Container = styled.div`
-  width: 100%;
-  height: calc(100vh);
-  background: yellow;
-  scroll-snap-align: start;
-  display: flex;
-`;
-
+import React, { useEffect, useState } from 'react';
+import { Container, ImgProfile, MachineAffection, Presentation } from './styled';
 
 const Home = () => {
+  const machineAffection : any = React.createRef()
+  const [lengthType, setLengthType] = useState(0);
+
+  useEffect(() => {
+    setLengthType(machineAffection?.current?.outerText?.length)
+  }, [])
+
   return (
-    <Container id="home" className='section'>home</Container>
+    <Container id="home" className='section'>
+      <Presentation>
+        <ImgProfile />
+        <div>
+          <span>Hola, soy</span>
+          <h1>MADELIY RICRA</h1>
+          <MachineAffection ref={machineAffection} length={lengthType}>Desarrrollador frontend</MachineAffection>
+        </div>
+      </Presentation>
+    </Container>
   )
 }
 

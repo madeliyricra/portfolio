@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100&display=swap');
 
 * {
   padding: 0;
@@ -10,7 +10,8 @@
   text-decoration: none;
   transition: 0.2s linear;
   font-size: 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #0e172c;
 }
 
 body{
@@ -18,4 +19,42 @@ body{
   scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+:root{
+  --blue-900: #0e172c;
+  --purple-200: #a786df;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+*::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button {
+  display: none;
+} 
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a1a1a1;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;  
 }
