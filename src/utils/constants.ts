@@ -27,6 +27,10 @@ export const skills = [
         icon: 'node',
         name: 'Node Js',
       },
+      {
+        icon: 'java',
+        name: 'Java',
+      },
     ]
   },
   {
@@ -46,24 +50,53 @@ export const skills = [
 
 export const projects = [
   {
-    name: 'Cookienet',
-    description: 'pagina de respoteleria',
+    name: 'Cookie',
+    description: 'Ecommerce sobre postres saludables',
     type: 'Grupal',
-    link: '',
-    source: 'https://github.com/pagina/cookienet'
+    link: 'https://madeliyricra.github.io/cookie/cookie',
+    image: 'https://i.ibb.co/LNWtd1K/cookienet.png',
+    source: '',
   },
   {
-    name: 'Cookienet',
-    description: 'pagina de respoteleria',
+    name: 'EVA',
+    description: 'Aplicación web de soporte emocional mediante la tele orientación con psicólogos',
     type: 'Grupal',
-    link: '',
-    source: 'https://github.com/pagina/cookienet'
+    link: 'https://maverickchampi.github.io/eva/',
+    image: 'https://i.ibb.co/X32gDBx/eva.png',
+    source: 'https://github.com/maverickchampi/eva'
   },
   {
-    name: 'Cookienet',
-    description: 'pagina de respoteleria',
-    type: 'Grupal',
-    link: '',
-    source: 'https://github.com/pagina/cookienet'
+    name: 'Stereo',
+    description: 'Aplicación web de músicas',
+    type: 'Personal',
+    link: 'https://madeliyricra.github.io/stereo/',
+    image: 'https://i.ibb.co/ngpS18C/stereo.png',
+    source: 'https://github.com/madeliyricra/stereo'
   }
+]
+
+export const certificates = [
+  {
+    name: 'CCBP certificate',
+    image: 'https://i.ibb.co/4TPdSw7/certificate-ccbp.png',
+    link: 'https://drive.google.com/file/d/1FfaxcMXQM7myBZmqdRgZYGzq5gQPLv3k/view?usp=sharing'
+  },
+  {
+    name: 'JavaScript certificate',
+    image: 'https://i.ibb.co/9sHDhcw/certificate-javascript.png',
+    link: 'https://drive.google.com/file/d/1MDSwVBuL9pPyxxnNWvZbNdIWxMHSdwRB/view?usp=sharing'
+  },
+  {
+    name: 'Cibertec certificate',
+    image: 'https://i.ibb.co/W2fc2RL/certificate-cibertec.png',
+    link: 'https://drive.google.com/file/d/1u8Y7M-a3UHVW_Db3bb3kiABbCpNTvhZE/view?usp=sharing'
+  }
+]
+
+export const repository = 'https://github.com/madeliyricra'
+
+export const studies = [
+  'Cibertec - Computación e informática', 
+  'Platzi', 
+  'Centro Cultura Brasil Perú - Portugués'
 ]

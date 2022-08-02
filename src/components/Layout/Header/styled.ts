@@ -37,3 +37,9 @@ export const Indicator = styled.span<IIndicator>`
   transform: ${props => props.transform ? `translateX(${props.width  * props.transform}px)` : "initial"}; 
   transition: .3s ease-out all;
 `
+
+export const Brand = styled.h2`
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+`

@@ -23,9 +23,9 @@ const SocialNetwork = () => {
     <Container>
       <ListSocial>
         {
-          data?.map((social) => {
+          data?.map((social, key) => {
             return (
-            <ItemSocial>
+            <ItemSocial key={key}>
               <a href={social?.url} target='_blank'><Icon name={social?.icon}/></a>
             </ItemSocial>)
           })

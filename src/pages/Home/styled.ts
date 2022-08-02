@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   min-width: 360px;
-  max-width: 1440px;
+  max-width: var(--width-web);
   height: calc(100vh);
   scroll-snap-align: start;
 `;

@@ -1,15 +1,23 @@
-import { projects, Title } from '../../utils';
-import Project from './Project';
-import { Container, ListProjects } from './styled';
+import { projects, repository, Title } from '../../utils'
+import Project from './Project'
+import { IProject } from './props'
+import { Container, Link600, ListProjects } from './styled'
 
 const Projects = () => {
   return (
     <Container id='projects' className='section'>
       <Title>Mis proyectos</Title>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque rem sed quaerat aut accusantium dicta odio distinctio odit quo repudiandae vero, at quibusdam ex deserunt porro excepturi quidem, sit veritatis?</p>
+      <p>Estos son mis mejores proyectos, todo se puede visualizar en mi repositorio <Link600 href={repository}>GitHub</Link600></p>
       <ListProjects>
         {
-          projects?.map((project, key)=> <Project key={key} {...project}/>)
+          projects?.map((project : IProject, key)=> {
+            let className : string = ''
+            if(projects?.length === (key+1)){
+              className = projects?.length % 2 ? 'odd' : ''
+              project.className = className
+            }
+            return (<Project key={key} {...project}/>)
+          })
         }
       </ListProjects>
     </Container>

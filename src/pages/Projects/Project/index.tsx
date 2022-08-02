@@ -1,9 +1,19 @@
-import React from 'react'
+import { Icon } from '../../../components'
+import { IProject } from '../props'
+import { LinkIcon, Container } from './styled'
 
-const Project = (props: any) => {
-  const {name, type, image, source} = props;
+const Project = (props: IProject) => {
+  const {name, image, description, className, link} = props
+
   return (
-    <div>{name}</div>
+    <Container image={image} className={className}>
+      <section>
+        <h3>{name}</h3>
+        {/* <Tag>{type}</Tag> */}
+        <p>{description}</p>
+        <LinkIcon href={link} target="_blank"><Icon name='eye'/>Ver más</LinkIcon>
+      </section>
+    </Container>
   )
 }
 

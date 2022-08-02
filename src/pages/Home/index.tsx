@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Container, ImgProfile, MachineAffection, Presentation } from './styled';
+import React, { useEffect, useState } from 'react'
+import { Container, ImgProfile, MachineAffection, Presentation } from './styled'
 
 const Home = () => {
   const machineAffection : any = React.createRef()
-  const [lengthType, setLengthType] = useState(0);
+  const [lengthType, setLengthType] = useState(0)
 
   useEffect(() => {
     setLengthType(machineAffection?.current?.outerText?.length)

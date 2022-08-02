@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Indicator, Nav, NavItem } from './styled'
+import { Brand, Container, Indicator, Nav, NavItem } from './styled'
 
 
 const Header = () => {
   const [itemActive, setItemActive] = useState(0)
 
   const observer : any = new IntersectionObserver((entradas, observer) => {
-    const sections : any = document.querySelectorAll('.section');
+    const sections : any = document.querySelectorAll('.section')
     entradas.forEach(entrada => {
       if(entrada.isIntersecting){
         setItemActive([...sections].indexOf(entrada.target))
       }
-    });
+    })
   }, {
     rootMargin: '-80px 0px 0px 0px',
     threshold: 0.2
-  });
+  })
 
   useEffect(() => {
     const sections : any = document.querySelectorAll('.section')
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <Container id='header'>
-      <h2 style={{color: 'white'}}>Logo</h2>
+      <Brand>MR</Brand>
       <Nav>
         <NavItem href={'#home'}>Inicio</NavItem>
         <NavItem href={'#about'}>Sobre mi</NavItem>

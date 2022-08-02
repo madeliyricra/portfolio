@@ -24,6 +24,7 @@ body{
 :root{
   --blue-900: #0e172c;
   --purple-200: #a786df;
+  --width-web: 1240px;
 }
 
 @keyframes typing {
