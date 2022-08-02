@@ -8,24 +8,36 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   min-width: 360px;
-  max-width: var(--width-web);
+  max-width: var(--tablet-landscape);
   min-height: 100vh;
   scroll-snap-align: start;
+  @media screen and (min-width: 600px){
+    padding: 100px 30px 0;
+  }
 `;
 
 export const Skills = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+  @media screen and (min-width: 600px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 `
 
 export const Description = styled.section`
   display:  grid;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  @media screen and (min-width: 768px){
+    grid-template-columns: 1fr 1fr;
+  }
   .about-content{
     display: flex;
     flex-direction: column;
@@ -58,8 +70,17 @@ export const Description = styled.section`
 
 export const Certificates = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 20px;
   height: 100%;
   height: 100%;
+  @media screen and (min-width: 600px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 768px){
+    grid-template-columns: 1fr;
+  }
+  @media screen and (min-width: 1024px){
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
 `

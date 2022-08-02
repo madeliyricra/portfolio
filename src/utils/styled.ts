@@ -4,7 +4,7 @@ import border_title from './../assets/images/border_title.png'
 export const Title = styled.h2`
   position: relative;
   padding: 0 0 45px 0;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 900;
   text-align: center;
   &:after{
@@ -13,11 +13,18 @@ export const Title = styled.h2`
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 140px;
+    width: 100px;
     height: 40px;
     background: url(${border_title});
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px){
+    font-size: 45px;
+    &:after{
+      width: 140px;
+      height: 40px;
+    }
   }
 `
 

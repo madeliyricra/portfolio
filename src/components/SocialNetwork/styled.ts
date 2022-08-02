@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: none;
   position: fixed;
   width: 55px;
   height: 40vh;
@@ -16,6 +17,9 @@ export const Container = styled.div`
     width: 6px;
     height: 100%;
     background: #0e172c;
+  }
+  @media screen and (min-width: 768px){
+    display: block;
   }
 `;
 

@@ -24,7 +24,11 @@ body{
 :root{
   --blue-900: #0e172c;
   --purple-200: #a786df;
-  --width-web: 1240px;
+  --mobile-portrait: 360px;
+  --mobile-landscape: 480px;
+  --small-tablet-portrait: 600px;
+  --tablet-portrait: 768px;
+  --tablet-landscape: 1024px;
 }
 
 @keyframes typing {
@@ -59,3 +63,5 @@ body{
 *::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
+
+/* @media screen and (min-width: 1056px) { */

@@ -7,7 +7,9 @@ export const Container =  styled.div<{image?: string}>`
   border-radius: 15px;
   background: #0000008f;
   &.odd{
-    grid-column: 1/3;
+    @media screen and (min-width: 768px){
+      grid-column: 1/3;
+    }
   }
   &: after{
     content: "";

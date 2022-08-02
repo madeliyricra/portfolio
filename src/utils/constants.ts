@@ -77,9 +77,14 @@ export const projects = [
 
 export const certificates = [
   {
-    name: 'CCBP certificate',
-    image: 'https://i.ibb.co/4TPdSw7/certificate-ccbp.png',
-    link: 'https://drive.google.com/file/d/1FfaxcMXQM7myBZmqdRgZYGzq5gQPLv3k/view?usp=sharing'
+    name: 'Cibertec certificate',
+    image: 'https://i.ibb.co/W2fc2RL/certificate-cibertec.png',
+    link: 'https://drive.google.com/file/d/1u8Y7M-a3UHVW_Db3bb3kiABbCpNTvhZE/view?usp=sharing'
+  },
+  {
+    name: 'Fundamentals Node Js certificate',
+    image: 'https://i.ibb.co/RYmyjsT/fundamental-node.png',
+    link: 'https://drive.google.com/file/d/1F5SEEk2xhzWlfaXj_bKxCvuGsLeQj0rs/view?usp=sharing'
   },
   {
     name: 'JavaScript certificate',
@@ -87,10 +92,10 @@ export const certificates = [
     link: 'https://drive.google.com/file/d/1MDSwVBuL9pPyxxnNWvZbNdIWxMHSdwRB/view?usp=sharing'
   },
   {
-    name: 'Cibertec certificate',
-    image: 'https://i.ibb.co/W2fc2RL/certificate-cibertec.png',
-    link: 'https://drive.google.com/file/d/1u8Y7M-a3UHVW_Db3bb3kiABbCpNTvhZE/view?usp=sharing'
-  }
+    name: 'CCBP certificate',
+    image: 'https://i.ibb.co/4TPdSw7/certificate-ccbp.png',
+    link: 'https://drive.google.com/file/d/1FfaxcMXQM7myBZmqdRgZYGzq5gQPLv3k/view?usp=sharing'
+  },
 ]
 
 export const repository = 'https://github.com/madeliyricra'
