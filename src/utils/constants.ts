@@ -44,6 +44,10 @@ export const skills = [
         icon: 'postgres',
         name: 'PostgreSQL',
       },
+      {
+        icon: 'sql',
+        name: 'SQL server',
+      },
     ]
   }
 ]
