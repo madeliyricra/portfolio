@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Brand, Container, Indicator, Nav, NavItem } from './styled'
+import { Brand, Container, Indicator, Nav, IconNavBar, NavItem } from './styled'
 
 
 const Header = () => {
@@ -9,7 +9,8 @@ const Header = () => {
     const sections : any = document.querySelectorAll('.section')
     entradas.forEach(entrada => {
       if(entrada.isIntersecting){
-        setItemActive([...sections].indexOf(entrada.target))
+        const item = [...sections].indexOf(entrada.target)
+        setItemActive(item)
       }
     })
   }, {
@@ -22,13 +23,22 @@ const Header = () => {
     sections.forEach((section: any) => observer.observe(section))
   }, [])
 
+  const handleMenu = (e: any) =>{
+    e.target.classList.toggle('active')
+  }
+
   return (
     <Container id='header'>
       <Brand>MR</Brand>
+      <IconNavBar className='' onClick={handleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </IconNavBar>
       <Nav>
-        <NavItem href={'#home'}>Inicio</NavItem>
-        <NavItem href={'#about'}>Sobre mi</NavItem>
-        <NavItem href={'#projects'}>Proyectos</NavItem>
+        <NavItem href={'#home'} id="nav_home" className={itemActive === 0 ? 'active' : ''}>Inicio</NavItem>
+        <NavItem href={'#about'} id="nav_about" className={itemActive === 1 ? 'active' : ''}>Sobre mi</NavItem>
+        <NavItem href={'#projects'} id="nav_projects" className={itemActive === 2 ? 'active' : ''}>Proyectos</NavItem>
         <Indicator width={120} transform={itemActive}/>
       </Nav>
     </Container>

@@ -13,6 +13,9 @@ export const Container = styled.div`
   max-width: var(--tablet-landscape);
   height: calc(100vh);
   scroll-snap-align: start;
+  @media screen and (min-width: 600px){
+    padding: 100px 30px 0;
+  }
 `;
 
 export const Presentation = styled.div`
@@ -27,7 +30,7 @@ export const Presentation = styled.div`
     font-size: 40px;
     font-weight: 900;
     color: var(--purple-200);
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 480px){
       font-size: 50px;
     }
     @media screen and (min-width: 1024px){
@@ -38,7 +41,7 @@ export const Presentation = styled.div`
     font-weight: 600;
     font-size: 15px;
     color: var(--blue-900);
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 480px){
       font-size: 20px;
     }
     @media screen and (min-width: 1024px){
@@ -91,7 +94,7 @@ export const MachineAffection = styled.p<IMachineAffection>`
   animation: typing 2s steps(${props => props.length ? `${props?.length}`: '0'}), 
             blink .5s infinite step-end alternate;
   overflow: hidden;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 480px){
     font-size: 35px;
   }
   @media screen and (min-width: 1024px){
