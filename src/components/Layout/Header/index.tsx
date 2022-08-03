@@ -4,6 +4,7 @@ import { Brand, Container, Indicator, Nav, IconNavBar, NavItem } from './styled'
 
 const Header = () => {
   const [itemActive, setItemActive] = useState(0)
+  const iconNavBar : any = React.createRef()
 
   const observer : any = new IntersectionObserver((entradas, observer) => {
     const sections : any = document.querySelectorAll('.section')
@@ -21,16 +22,24 @@ const Header = () => {
   useEffect(() => {
     const sections : any = document.querySelectorAll('.section')
     sections.forEach((section: any) => observer.observe(section))
+    window.addEventListener('resize', resizeMenu)
   }, [])
 
-  const handleMenu = (e: any) =>{
-    e.target.classList.toggle('active')
+  const handleMenu = () =>{
+    iconNavBar?.current?.classList.toggle('active');
+  }
+
+  const resizeMenu = () =>{
+    const width = window.innerWidth;
+    if(width > 768){
+      iconNavBar?.current?.classList.remove('active');
+    }
   }
 
   return (
     <Container id='header'>
       <Brand>MR</Brand>
-      <IconNavBar className='' onClick={handleMenu}>
+      <IconNavBar className='' onClick={handleMenu} ref={iconNavBar}>
         <span></span>
         <span></span>
         <span></span>

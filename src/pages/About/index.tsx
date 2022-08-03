@@ -22,7 +22,7 @@ const About = () => {
             <h5>Estudios</h5>
             <ul>
               {
-                studies?.map((studie: string)=> <li>{studie}</li>)
+                studies?.map((studie: string, key)=> <li key={key}>{studie}</li>)
               }
             </ul>
           </div>

@@ -80,7 +80,7 @@ export const IconNavBar = styled.button`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     background: #0e172cd1; 
     a{
