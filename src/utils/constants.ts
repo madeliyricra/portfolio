@@ -70,12 +70,12 @@ export const projects = [
     source: 'https://github.com/maverickchampi/eva'
   },
   {
-    name: 'Stereo',
-    description: 'Aplicación web de músicas',
+    name: 'Gif',
+    description: 'Aplicación web de busqueda de gifs',
     type: 'Personal',
-    link: 'https://madeliyricra.github.io/stereo/',
-    image: 'https://i.ibb.co/ngpS18C/stereo.png',
-    source: 'https://github.com/madeliyricra/stereo'
+    link: 'https://gif-omega.vercel.app/',
+    image: 'https://i.ibb.co/Bw9Q01T/gif.png',
+    source: 'https://github.com/madeliyricra/gif'
   }
 ]
 
